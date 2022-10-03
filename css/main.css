@@ -1,1 +1,55 @@
-/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(233deg, 47%, 7%);
+}
+
+.card {
+  margin: 5rem 2rem 5rem 2rem;
+  background-color: hsl(244deg, 38%, 16%);
+  border-radius: 15px;
+}
+.card .left-mobile {
+  background-image: url(../images/image-header-mobile.jpg);
+  background-color: hsl(277deg, 64%, 61%);
+  background-size: cover;
+  height: 50vh;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.card .right {
+  color: white;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+.card .right .header {
+  font-size: 30px;
+  font-weight: 700;
+}
+.card .right .header span {
+  color: violet;
+}
+.card .right .paragraph {
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 5rem;
+    height: 55vh;
+  }
+  .card .left-mobile {
+    display: none;
+  }
+  .card .left-web {
+    background-image: url(../images/image-header-desktop.jpg);
+    background-color: hsl(277deg, 64%, 61%);
+  }
+}/*# sourceMappingURL=main.css.map */
